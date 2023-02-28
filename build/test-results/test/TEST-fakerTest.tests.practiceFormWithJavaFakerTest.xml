@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fakerTest.tests.practiceFormWithJavaFakerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-26T13:00:21" hostname="DESKTOP-4BG25C6" time="23.287">
+  <properties/>
+  <testcase name="fillPracticeForm()" classname="fakerTest.tests.practiceFormWithJavaFakerTest" time="23.287"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Goha\IdeaProjects\demo_qa_faker\build\downloads\1677416422052_16716_1
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Goha\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 15260
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677416423.954][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+февр. 26, 2023 7:00:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: 108
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=110.0.5481.177 Platform=WINDOWS
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.10.3
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.7.2 build revision: 4d4020c3b7
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (4e34575deb273fa062faf572d39ede4a)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on WINDOWS (4e34575deb273fa062faf572d39ede4a),proxy=null,downloadsFolder=C:\Users\Goha\IdeaProjects\demo_qa_faker\build\downloads\1677416422052_16716_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Browser and proxy will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on WINDOWS (4e34575deb273fa062faf572d39ede4a), null
+]]></system-err>
+</testsuite>
