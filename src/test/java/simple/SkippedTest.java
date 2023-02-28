@@ -5,17 +5,17 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-@Tag("Simple")
+@Tag("simple")
 public class SkippedTest {
     @Test
-    @Disabled("Some reason")
+    @Disabled
     void test1() {
-        assertTrue(true);
+        assertTrue(false);
     }
 
     @Test
-    @Disabled
+    @Disabled("Some reason")
     void test2() {
-        assertTrue(true);
+        assertTrue(false);
     }
 }
