@@ -35,6 +35,7 @@ public class practiceFormWithJavaFakerTest {
         String userEmail = faker.internet().emailAddress();
         String address = faker.address().streetAddress();
 
+
         open("/automation-practice-form");
         executeJavaScript("$('#fixedban').remove()"); // delete reklama
         executeJavaScript("$('footer').remove()"); // delete footer
