@@ -9,6 +9,7 @@ import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
+import static io.qameta.allure.Allure.step;
 
 public class practiceFormWithRemoteDriver extends TestBaseExtended{
 
@@ -23,10 +24,14 @@ String userName = "Alex",
     @Tag("remote")
     void fillPracticeForm(){
         String userName = "Alex";
-        open("/automation-practice-form");
-        executeJavaScript("$('#fixedban').remove()"); // delete reklama
-        executeJavaScript("$('footer').remove()"); // delete footer
-        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+        step("Open form",()->{
+            open("/automation-practice-form");
+            executeJavaScript("$('#fixedban').remove()"); // delete reklama
+            executeJavaScript("$('footer').remove()"); // delete footer
+            $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+        });
+
+        step("Fill form",()->{
         $("#firstName").setValue(userName);
         $("#lastName").setValue(userLastName);
         $("#userEmail").setValue(userEmail);
@@ -46,11 +51,14 @@ String userName = "Alex",
         $("#city").click();
         $("#stateCity-wrapper").$(byText("Noida")).click();
         $("#submit").click();
+        });
+
+        step("Verify results",()->{
         $(".modal-dialog").should(appear);
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $(".table-responsive").shouldHave(text(userName),text("Baikenov"),
                 text("123@mail.ru"),text("8777777777")); // i togdalee
-
+        });
 
 
 
